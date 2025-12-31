@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(180deg, #020617, #0f172a);
+  color: #e5e7eb;
+}
+
+/* Ads */
+.ad {
+  width: 100%;
+  min-height: 60px;
+  background: #020617;
+  border: 1px dashed #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  margin: 16px 0;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 16px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Cards */
+.card {
+  background: #020617;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #1e293b;
+}
+
+.highlight {
+  border: 2px solid #22c55e;
+}
+
+/* Copy Item */
+.copy-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  background: #020617;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: 1px solid #1e293b;
+}
+
+.copy-item code,
+.copy-item span {
+  font-size: 14px;
+  word-break: break-all;
+}
+
+/* Button */
+button {
+  padding: 8px 14px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #000;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .copy-item {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
