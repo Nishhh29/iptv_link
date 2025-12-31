@@ -9,27 +9,12 @@ body {
   color: #e5e7eb;
 }
 
-/* Ads */
-.ad {
-  width: 100%;
-  min-height: 60px;
-  background: #020617;
-  border: 1px dashed #334155;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #64748b;
-  margin: 16px 0;
-}
-
-/* Container */
 .container {
   max-width: 960px;
   margin: auto;
   padding: 16px;
 }
 
-/* Header */
 .header {
   text-align: center;
   margin-bottom: 20px;
@@ -40,7 +25,6 @@ body {
   font-size: 14px;
 }
 
-/* Cards */
 .card {
   background: #020617;
   border-radius: 16px;
@@ -53,13 +37,11 @@ body {
   border: 2px solid #22c55e;
 }
 
-/* Copy Item */
 .copy-item {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 12px;
   align-items: center;
-  background: #020617;
   padding: 12px;
   border-radius: 12px;
   margin-top: 10px;
@@ -72,7 +54,6 @@ body {
   word-break: break-all;
 }
 
-/* Button */
 button {
   padding: 8px 14px;
   font-size: 12px;
@@ -81,9 +62,15 @@ button {
   background: linear-gradient(135deg, #22c55e, #16a34a);
   color: #000;
   cursor: pointer;
+  white-space: nowrap;
 }
 
-/* Responsive */
+.ad {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
 @media (max-width: 640px) {
   .copy-item {
     grid-template-columns: 1fr;
